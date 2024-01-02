@@ -1,4 +1,4 @@
-# ChatBot Application API
+# ChatBot Application API's
 
 This repository contains a Flask application that serves as a simple chatbot. The application integrates with a PostgreSQL database to manage user authentication, conversation history, and the Hugging Face ChatGPT model for generating responses.
 
