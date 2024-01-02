@@ -1,0 +1,71 @@
+
+
+# ChatBot API
+
+ChatBot API is a Flask-based web service that allows users to interact with a chatbot powered by Hugging Face's ChatGPT. It provides endpoints for user authentication, starting new conversations, viewing conversation history, and more.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Authentication](#authentication)
+  - [Starting a New Conversation](#starting-a-new-conversation)
+  - [Viewing Conversation History](#viewing-conversation-history)
+  - [Deleting User History](#deleting-user-history)
+
+## Getting Started
+
+### Prerequisites
+
+Before running the ChatBot API, ensure you have the following installed:
+
+- Python 3.x
+- PostgreSQL database
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/softdeveloper968/generativeAI.git
+   app_api.py
+
+### Install dependencies:
+
+2. pip install -r requirements.txt
+
+
+
+###
+run python api file.(app_api.py)
+
+### Usage
+### Authentication
+To use the ChatBot API, you need to authenticate with a valid  key.
+
+### Check Authentication Status 
+GET /api/check_auth_status?key=YOUR__KEY
+Returns the authentication status and user data.
+
+### Starting a New Conversation
+ Start a New Conversation
+ POST /api/start_new_conversation?key=YOUR__KEY
+ Starts a new conversation with an initial null message and returns the message ID.
+
+### Viewing Conversation History
+    View User Conversation History
+    GET /api/user_history?key=YOUR__KEY
+    Returns the conversation history for the authenticated user.
+
+### Deleting User History
+    Delete User Conversation History
+
+    POST /api/delete_user_history
+    Content-Type: application/json
+
+    {
+    "key": "YOUR__KEY"
+    }
+    Deletes the conversation history for the authenticated user.
