@@ -31,7 +31,7 @@ This repository contains a Flask application that serves as a simple chatbot. Th
 1. Clone the repository:
 
    ```bash
-     git clone https://github.com/softdeveloper968/generativeAI.git
+     [git clone https://github.com/arielparul/hugchatbot.git]
      cd app_api.py
 
 ### Install dependencies:
