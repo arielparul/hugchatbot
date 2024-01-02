@@ -1,0 +1,2 @@
+ALTER TABLE conversation_history
+ADD COLUMN created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
